@@ -34,9 +34,28 @@ def getx(v, lb, ub, i, B):
 
 
 def max_sum_xlogx(n, B, lb, ub):
-    """Find the optimal solution of max x1*log(x1) + ... + xn*log(xn)
-    subject to constraints x1 + ... xn = B, lb_i <= xi <= ub_i."""
+    """
+    Find the optimal solution of max x1*log(x1) + ... + xn*log(xn)
+    subject to constraints x1 + ... xn = B, lb_i <= xi <= ub_i.
     
+    Parameters
+    ----------
+    n: int
+        Number of variables.
+    B: float
+        Total number of resources.
+    lb: array of floats
+        Lower bounds of variables.
+    ub: array of floats
+        Upper bounds of variables.
+        
+    Returns
+    -------    
+    opt_obj: float
+        Optimal objective value.
+    opt_sol: an array of floats
+        Optimal solution.
+    """    
     # Initialize the optimal solution and optimal objective
     opt_obj = - n/np.e
     opt_sol = np.array([])
