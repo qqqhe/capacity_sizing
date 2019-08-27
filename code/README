@@ -1,4 +1,4 @@
-Explanations on files
+List of files
   experiments.py - main program, which generates test instances and finds the optimal parking capacities
   network.py - contains the main class "network" and most functions related to search for optimal capacities
   inner_optimization.py - functions that solve the inner optimization problem: a resource allocation problem (maximization) with a separable convex objective   
