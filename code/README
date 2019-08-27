@@ -1,1 +1,7 @@
-
+Explanations on files
+  experiments.py - main program, which generates test instances and finds the optimal parking capacities
+  network.py - contains the main class "network" and most functions related to search for optimal capacities
+  inner_optimization.py - functions that solve the inner optimization problem: a resource allocation problem (maximization) with a separable convex objective   
+  search_methods.py - a bisection search function
+  homoAlg.py - a script file that finds the unique equilibrium point defined in \bq = \bF(\bq) with any given \bC and under the MNL choice model
+  
